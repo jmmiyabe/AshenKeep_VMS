@@ -9,7 +9,6 @@ URL::forceRootUrl($url);
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/', function () {
     return view('applicant_requirements');
 });
