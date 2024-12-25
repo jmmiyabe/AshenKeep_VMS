@@ -20,6 +20,28 @@
         @endif
     </head>
     <body class="bg-white">
+    <header class="absolute top-0 left-4 p-4 z-0">
+            <h2 class="text-4xl font-semibold text-blue-600">Ashenkeep</h2>
+        </header>
+
+        <!-- Main Container -->
+        <div class="min-h-screen flex items-center px-8">
+            <!-- Sidebar -->
+            <div class="absolute left-0 bg-yellow-500 w-1/8 h-60 rounded-r-3xl flex flex-col items-start p-8">
+                <button class="bg-yellow-600 text-white w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
+                    <img src="./img/dash_icon.svg" alt="dash icon"  class="w-6 h-6">
+                    Dashboard
+                </button>
+                <button class="bg-yellow-600 text-white w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
+                    <img src="./img/view_icon.svg" alt="View icon"  class="w-6 h-6">
+                    View Requirements
+                </button>
+                <button class="bg-yellow-600 text-white text-start w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
+                    <img src="./img/submit_icon.svg" alt="Submit icon" class="w-6 h-6">
+                    Submission Requirements
+                </button>
+            </div>
 
         
-    </body
+</body>
+</html>
