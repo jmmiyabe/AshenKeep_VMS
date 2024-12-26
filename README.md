@@ -6,7 +6,4 @@ Project by Group InnoVentures
 
 Team leader: John Keisuke Miyabe
 
-Members: Heiro Usana
-         John Emmanuel Piala
-         
-         Kyla Amor Pantino
+Members: Heiro Usana, John Emmanuel Piala, and Kyla Amor Pantino
