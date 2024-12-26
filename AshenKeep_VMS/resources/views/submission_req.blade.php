@@ -21,130 +21,45 @@
     </head>
     <body class="bg-white">
     <header class="absolute top-0 left-4 p-4 z-0">
-            <h2 class="text-4xl font-semibold text-blue-600">Ashenkeep</h2>
-        </header>
+        <h1 class="text-4xl font-semibold text-blue-600">Ashenkeep</h2>
+    </header>
 
-        <!-- Main Container -->
-        <div class="min-h-screen flex items-center px-8">
+    <!-- Main Container -->
+    <div class="min-h-screen flex items-center px-8">
             <!-- Sidebar -->
             <div class="absolute left-0 bg-yellow-500 w-1/7 h-65 rounded-r-3xl flex flex-col items-start p-8">
                 <button class="bg-yellow-600 text-white w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
                     <img src="./img/dash_icon.svg" alt="dash icon"  class="w-6 h-6">
                     <a
-                    href="{{ route('login') }}">
-                    Dashboard
+                      href="{{ route('login')}}">
+                      Dashboard
                     </a>
                 </button>
                 <button class="bg-yellow-600 text-white w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
                     <img src="./img/view_icon.svg" alt="View icon"  class="w-6 h-6">
-                    <a
-                    href="{{ route('login') }}">
+                    <a 
+                      href="{{ route('login')}}">
                     View Requirements
                     </a>
                 </button>
                 <button class="bg-yellow-600 text-white text-start w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
                     <img src="./img/submit_icon.svg" alt="Submit icon" class="w-6 h-6">
                     <a 
-                    href="{{ route('login') }}">
-                    Submission Requirements
+                      href="{{ route('login')}}">
+                      Submission Requirements
                     </a>
                 </button>
                 <button class="bg-yellow-600 text-white text-start w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
                     <img src="./img/logout_icon.svg" alt="Logout icon" class="w-6 h-6">
                     <a 
                     href="{{ route('login') }}">
-                    Logut
+                    Logout
                     </a>
                 </button>
 
             </div>
-            
-            <!-- Blue Table -->
-             <div class="bg-blue-900 text-white rounded-lg p-6 w-3/4 ml-auto mr-20">
-                <h3 class="text-2xl font-semibold mb-6 text-white">Requirements</h3>
-                <table class="table-fixed w-full text-center border-collapse border-separate border-spacing-y-2 rounded-md overflow-hidden">
-                    <thead class="bg-blue-900">
-                        <tr>
-                            <th class="p-3">ID</th>
-                            <th class="p-3">Name</th>
-                            <th class="p-3">Type</th>
-                            <th class="p-3">Format</th>
-                            <th class="p-3">Date</th>
-                            <th class="p-3">Time</th>
-                            <th class="p-3">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="bg-yellow-500 text-white">
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                        </tr>
-                        <tr class="bg-yellow-500 text-white">
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                        </tr>
-                        <tr class="bg-yellow-500 text-white">
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                        </tr>
-                        <tr class="bg-yellow-500 text-white">
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                        </tr>
-                        <tr class="bg-yellow-500 text-white">
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                        </tr>
-                        <tr class="bg-yellow-500 text-white">
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                        </tr>
-                        <tr class="bg-yellow-500 text-white">
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                            <td class="p-6"></td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        </div>
 
 
-        
+
 </body>
 </html>
