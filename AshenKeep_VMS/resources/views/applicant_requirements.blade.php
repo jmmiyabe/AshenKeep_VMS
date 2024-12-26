@@ -30,15 +30,24 @@
             <div class="absolute left-0 bg-yellow-500 w-1/7 h-60 rounded-r-3xl flex flex-col items-start p-8">
                 <button class="bg-yellow-600 text-white w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
                     <img src="./img/dash_icon.svg" alt="dash icon"  class="w-6 h-6">
-                    Dashboard
+                    <a
+                      href="{{ route('dashboard')}}">
+                      Dashboard
+                    </a>
                 </button>
                 <button class="bg-yellow-600 text-white w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
                     <img src="./img/view_icon.svg" alt="View icon"  class="w-6 h-6">
+                    <a 
+                      href="{{ route('view')}}">
                     View Requirements
+                    </a>
                 </button>
                 <button class="bg-yellow-600 text-white text-start w-full py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
                     <img src="./img/submit_icon.svg" alt="Submit icon" class="w-6 h-6">
-                    Submission Requirements
+                    <a 
+                      href="{{ route('submission')}}">
+                      Submission Requirements
+                    </a>
                 </button>
             </div>
             
