@@ -45,10 +45,29 @@
                     <img src="./img/logout_icon.svg" alt="Logout icon" class="w-6 h-6">
                     Logut
                 </x-apply-button>
-            </div>
-            
+            </div>       
+    </div>
+    <div class="absolute inset-0 h-50 top-10 max-w-xl mx-auto bg-blue-900 p-6 rounded items-center">
+        <h2 class="text-2xl font-semibold mb-6 text-white">Sumbit Your Requirements</h2>
+        <form method="POST" enctype="multipart/form-data" aciton="{{ route('submission') }}">
+            @csrf 
 
+            <div>
+                <x-label for="name" value="{{ __('Name') }}" class="text-white" />
+                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
+
+            <div class="mb-4">
+                <x-label for="file" value="{{ __('Attach a File') }}" class="text-white" />
+                <x-input id="file" class="block mt-1 w-full border border-yellow-300 rounded-lg" type="file" name="file" :value="old('file')"/>
+            </div>    
+        </form>
+        <x-apply-button href="{{ route('login') }}" class="bg-yellow-600 text-white text-start w-4 py-3 rounded mb-4 flex items-start justify-start gap-2 hover:bg-yellow-700">
+            Submit
+            <img src="./img/send.svg" alt="Send icon" class="w-6 h-6">
+        </x-apply-button>
+    </div>
+
 
 
 
