@@ -10,6 +10,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/requirements', function () {
+    return view('requirements'); 
+})->name('requirements');
+
+Route::get('/submission', function () {
+    return view('submission'); 
+})->name('submission');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
