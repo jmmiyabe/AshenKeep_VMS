@@ -49,7 +49,7 @@
     </div>
     <div class="absolute inset-0 h-50 top-10 max-w-xl mx-auto bg-blue-900 p-6 rounded items-center">
         <h2 class="text-2xl font-semibold mb-6 text-white">Sumbit Your Requirements</h2>
-        <form method="POST" enctype="multipart/form-data" aciton="{{ route('submission') }}">
+        <form id="requirementsForm" method="POST" enctype="multipart/form-data" aciton="{{ route('submission') }}">
             @csrf 
 
             <div>
@@ -67,6 +67,59 @@
             <img src="./img/send.svg" alt="Send icon" class="w-6 h-6">
         </x-apply-button>
     </div>
+
+    <script>
+        //Submission Handler
+        document.getElementById('requirementsForm').addEventListener('Submit', async function (e) {
+            e.preventDefault();
+
+            //Form Data
+            cont formData = new FormData();
+            formData.append('name', document.getElementById('name').value);
+            formData.append('file', document.getElementById('file').files[0]);
+
+            try {
+                //Request to Laravel Backend
+                const response = await fetch('/submission', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Your requirements have been successfully submitted.',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    });
+
+                    // Optionally clear the form
+                    document.getElementById('requirementForm').reset();
+                } else {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'There was an issue submitting your requirements. Please try again.',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'An unexpected error occurred.',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+            }
+
+        }
+            
+        
 
 
 
